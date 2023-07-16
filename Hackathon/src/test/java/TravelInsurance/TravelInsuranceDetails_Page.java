@@ -93,7 +93,7 @@ public class TravelInsuranceDetails_Page{
 	
 	// DROPDOWN FOR PERSON 1 AGE
 	
-	@FindBy(xpath="//div[contains(text(),'Select age of traveller 1')]")
+	@FindBy(xpath="//div[@id='0']")
 	WebElement dropdown1;
 	public void dropDown1() {
 		dropdown1.click();
@@ -109,7 +109,7 @@ public class TravelInsuranceDetails_Page{
 
 	// DROPDOWN FOR PERSON 2 AGE
 	
-	@FindBy(xpath="//div[contains(text(),'Select age of traveller 2')]")
+	@FindBy(xpath="//div[@id='1']")
 	WebElement dropdown2;
 	public void dropDown2() {
 		dropdown2.click();

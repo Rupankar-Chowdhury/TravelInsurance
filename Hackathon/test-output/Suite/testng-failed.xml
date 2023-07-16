@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Test.HealthInsuranceTest">
+        <methods>
+          <include name="log"/>
+          <include name="openBrowser"/>
+          <include name="extract_HealthInsurance_menu_items"/>
+          <include name="openWebsite"/>
+          <include name="initialize"/>
+          <include name="close"/>
+          <include name="hover_on_insuranceProducts_dropdown"/>
+          <include name="reportend"/>
+        </methods>
+      </class> <!-- Test.HealthInsuranceTest -->
+      <class name="Test.VehicleInsuranceTest">
+        <methods>
+          <include name="openWebsite"/>
+          <include name="openBrowser"/>
+          <include name="log"/>
+          <include name="invalidDetails"/>
+          <include name="close"/>
+          <include name="reportend"/>
+          <include name="reg_year"/>
+          <include name="brand_model"/>
+          <include name="initialize"/>
+          <include name="hover_select"/>
+          <include name="city_region"/>
+          <include name="fuel_type_variant"/>
+          <include name="proceed_without_no"/>
+          <include name="invalidDetails_message_capture"/>
+        </methods>
+      </class> <!-- Test.VehicleInsuranceTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
